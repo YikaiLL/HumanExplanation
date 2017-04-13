@@ -1,0 +1,525 @@
+{% extends "poi/base.html" %}
+{% block content %}
+    {% load staticfiles %}
+    <div class="scrollToTop">
+        <i class="icon-up-open-big"></i>
+    </div>
+
+    <!-- header start -->
+    <!-- ================ -->
+    <header class="header fixed clearfix navbar navbar-fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+
+                    <!-- header-left start -->
+                    <!-- ================ -->
+                    <div class="header-left clearfix">
+
+                        <!-- logo -->
+                        <div class="logo smooth-scroll">
+                            <a href="#banner"><img id="logo" src="{% static '/images/logo.png' %}" alt="Worthy"></a>
+                        </div>
+
+                        <!-- name-and-slogan -->
+                        <div class="site-name-and-slogan smooth-scroll">
+                            <div class="site-name"><a href="#banner">Title</a></div>
+                            <div class="site-slogan">new crowdsourcing platform</div>
+                        </div>
+
+                    </div>
+                    <!-- header-left end -->
+
+                </div>
+                <div class="col-md-8">
+
+                    <!-- header-right start -->
+                    <!-- ================ -->
+                    <div class="header-right clearfix">
+
+                        <!-- main-navigation start -->
+                        <!-- ================ -->
+                        <div class="main-navigation animated">
+
+                            <!-- navbar start -->
+                            <!-- ================ -->
+                            <nav class="navbar navbar-default" role="navigation">
+                                <div class="container-fluid">
+
+                                    <!-- Toggle get grouped for better mobile display -->
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                                data-target="#navbar-collapse-1">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
+
+                                    <!-- Collect the nav links, forms, and other content for toggling -->
+                                    <div class="collapse navbar-collapse scrollspy smooth-scroll"
+                                         id="navbar-collapse-1">
+                                        <form>
+                                            <ul class="nav navbar-nav navbar-right">
+
+                                                <li class="active"><a href="#Recommendation">Recommendation</a></li>
+                                                <li><a href="#edit">Edit Explaination</a></li>
+                                                <li><a href="#choose">Choose the Best</a></li>
+                                                <li><a href="#search">Search</a> </li>
+                                                <li ><a href="home.html"> LogOut  </a></li>
+                                                {#                                                <li class="form-search"><input type="text"/><input type="submit" class="btn-head btn-default" value="search"/></li>#}
+
+
+                                                <!--<li><a href="#portfolio">Portfolio</a></li>
+                                                <li><a href="#clients">Clients</a></li>
+                                                <li><a href="#contact">Contact</a></li>-->
+                                            </ul>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </nav>
+                            <!-- navbar end -->
+
+                        </div>
+                        <!-- main-navigation end -->
+
+                    </div>
+                    <!-- header-right end -->
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- banner start -->
+    <!-- ================ -->
+    <div id="banner" class="banner">
+        <div class="banner-image"></div>
+        <div class="banner-caption">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 object-non-visible" data-animation-effect="fadeIn">
+                        <h1 class="text-center">We are <span>Title</span></h1>
+                        <p class="lead text-center">Help you to find a better choice</p>
+                        <p class="lead text-center">Discover What <strong>{{ names }}</strong> would have interest</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner end -->
+
+
+    <!-- section start -->
+    <!-- ================ -->
+    <div class="section translucent-bg bg-image-1 blue">
+        <div class="container object-non-visible" data-animation-effect="fadeIn">
+            <h1 id="Recommendation" class="text-center title">Recommendation</h1>
+            <div class="space"></div>
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="media">
+                        <div class="media-left">
+                            {#                            We have the user picture here#}
+                            <a target="_blank" href="https://twitter.com/{{ names }}"><h4 class="media-heading"
+                                                                                          title="{{ names }}'s Twitter"></h4>
+                                <img src="{{ pic }}" width="200px"/></a>
+                        </div>
+                        <div class="media-body" style="padding-top: 100px">
+                            {#                            This the user's name#}
+                            <p><a target="_blank" href="https://twitter.com/{{ names }}"><h4 class="media-heading"
+                                                                                             title="{{ names }}'s Twitter">{{ names }}</h4>
+                            </a></p>
+                        </div>
+                    </div>
+
+
+                    <div class="media-body">
+                        <p>
+                        <ul>
+                            {% if description != None %}
+                                <li class="description"><h4>Description: {{ description }}</h4></li>
+                            {% endif %}
+                            {% if usercity != None and  usercountry != None %}
+                                <li class="userlocation"><h4>From: {{ usercity }}, {{ usercountry }}</h4></li>
+                            {% endif %}
+                            {#user id#}
+                            <li class="userid"><h5>This user id (test):
+                                {{ id }}</h5>
+                            </li>
+
+                            <li class="topic"><h5>Topic:
+                                {{ topic_list }}</h5>
+                            </li>
+
+                            <li class="test"><h5>Userid:
+                                {{ exp_userid }}, {{ temp }}, bugs:{{ bug }}</h5>
+                            </li>
+
+
+                        </ul>
+                        </p>
+
+                        {#                    Here goes the history#}
+                        <h3>Let me see... Wow, you have been to a lot of places in London.</h3>
+                        {% for venueid,venuename in uservenuelist.items %}
+                            {#                                {% for itemname in name %}#}
+                            <a target="_blank" href="http://foursquare.com/v/{{ venueid }}"><h4
+                                    class="media-heading" style="padding-left: 20px">{{ venuename }}</h4></a>
+                            {#                                {% endfor %}#}
+                            {#                                <h4>{{ venueid }}</h4>#}
+                        {% endfor %}
+                    </div>
+
+                </div>
+
+                <div class="space visible-xs"></div>
+                <div class="col-sm-7">
+                    {#                    <input class="form-search" id="keyword" name="keyword"/>#}
+
+                    <div class="media">
+                        <div class="media-body">
+                            <h4 class="media-heading">According to your personal habbit, I would recommend these
+                                location for you...</h4>
+                        </div>
+                    </div>
+
+
+                    <ul>
+                        <table id="recomlist">
+
+                            {#                            <tr class="media-body">#}
+
+                            {#								<div class="media-body">#}
+                            {% for venueid,venueprofile in POIs.items %}
+                                <tr style="100%">
+
+                                    <td style="width:40%; padding:20px; border-bottom: dotted;border-top: dotted">
+                                        {% if venueprofile.picture != None %}
+                                            <a target="_blank" href="http://foursquare.com/v/{{ venueid }}"><img
+                                                    src="{{ venueprofile.picture }}"/></a>
+                                        {% endif %}
+                                    </td>
+
+                                    {#									        <h4 class="media-heading">{{  venueid  }}</h4>#}
+                                    {#                                        {% for venuekey,value in venueprofile.iteritems %}#}
+                                    <td style="width:60%;padding: 20px;border-bottom: dotted;border-top: dotted">
+                                        <a target="_blank" href="http://foursquare.com/v/{{ venueid }}"><h2
+                                                class="media-heading">{{ venueprofile.name }}</h2></a>
+                                        <h4 class="media-heading">{{ venueprofile.address }}</h4>
+                                        <table>
+                                            {% for type in venueprofile.type %}
+                                                <th style="padding: 10px"><a href="#"></a>
+                                                    <p class="media-heading"
+                                                       style="background: rgba(64, 81, 106, 0.78);width: auto">{{ type }}</p></a>
+                                                </th>
+                                            {% endfor %}
+                                        </table>
+                                        {% if venueprofile.phrase != None and venueprofile.phrase != '' %}
+                                            <p> {{ phrase }} </p>
+                                        {% endif %}
+                                        {% if venueprofile.comment != None %}
+                                            <p>{{ comment }}</p>
+                                        {% endif %}
+                                        <div class="space visible-s"></div>
+
+
+                                    </td>
+                                </tr>
+                                <div class="space visible-s"></div>
+                            {% endfor %}
+
+
+                            {#									<p><a href = "#">link</a>	<a href = "#">link</a></p>#}
+                            {#									<p>Explaination</p>#}
+                            {#								</div>#}
+                            {#                            </tr>#}
+                        </table>
+
+                        <!--	<li id="rank2">
+                                <div class="media-left">
+                                    <i class="fa fa-area-chart"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading" id = "rank2">Restuarant</h4>
+                                    <p>Explaination</p>
+                                </div>
+                            </li>
+
+                            <li id="rank3">
+                                <div class="media-left">
+                                    <i class="fa fa-child"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading" id = "rank3">Cafe</h4>
+                                    <p>Explaination</p>
+                                </div>
+                            </li>
+
+                            <li id="rank1">
+                                <div class="media-left">
+                                    <i class="fa fa-codepen"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading" id="rank4">Museum</h4>
+                                    <p>Explaination</p>
+                                </div>
+                            </li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section end -->
+
+    <div class="section translucent-bg bg-image-1">
+        <div class="container object-non-visible" data-animation-effect="fadeIn">
+            <h1 id="search" class="text-center title">Search</h1>
+            <div class="space"></div>
+            <div class="col-sm-6">
+                <p class="large">Search venues for user</p>
+                <input id="search_box" type="text" placeholder="Search..." style="color: #2a6496"/>
+                <button id="search_submit" type="submit" class="btn-default">Search</button>
+                {% csrf_token %}
+
+            </div>
+            <div class="col-sm-6">
+                <h3>Here are the search results</h3>
+                <div class="footer-content" id="search_result">
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+    <!-- section start -->
+    <!-- ================ -->
+    <div class="section translucent-bg bg-image-2 pb-clear">
+        <div class="container object-non-visible" data-animation-effect="fadeIn">
+            <h1 id="choose" class="title text-center">Which Explaination is a better choice?</h1>
+            <div class="space"></div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="media testimonial">
+                         <center><table width="100%">
+                            <tr>
+                                <th style="padding: 5px"><h4>Traveller</h4></th>
+                                <th style="padding: 5px"><h4>Point of interest</h4></th>
+                            </tr>
+                            <tr>
+                                <td><img src="{{ exp_userpic }}" width="180px"/></td>
+                                <td><img src="{{ exp_venuephoto }}" width="180px"/> </td>
+
+
+                            </tr>
+                            <tr>
+                                <td><h3>{{ exp_username }}</h3></td>
+                                <td><h3>{{ exp_venuename }}</h3></td>
+
+                            </tr>
+                            <tr>
+                                <td>{{ exp_usercity }} {{ exp_usercountry }}</td>
+                                <td>{{ exp_venueadd }}</td>
+                            </tr>
+                             <tr>
+                                 <td>
+                                 <p>~~places he/she had been to~~</p>
+                                     {% for venueid,venuename in exp_history.items %}
+                            {#                                {% for itemname in name %}#}
+                                    <a target="_blank" href="http://foursquare.com/v/{{ venueid }}">
+                                    <h6 style="padding-left: 10px;">{{ venuename }}</h6>
+                                    </a>
+                            {#                                {% endfor %}#}
+                            {#                                <h4>{{ venueid }}</h4>#}
+                                    {% endfor %}
+                                 </td>
+                                <td>
+                                    haode
+                                </td>
+                             </tr>
+
+                        </table></center>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    {% for explain in cand_explain %}
+
+                    <div class="media testimonial">
+                        <div class="media-left">
+                            <input type="radio" checked="checked" name="bestexp" value="1">
+                            <img src="{% static '/images/testimonial-2.png' %}" alt="">
+                        </div>
+                        <div class="media-body">
+{#                            <h3 class="media-heading">Yeah!</h3>#}
+
+                            <blockquote>
+                                <p>{{ explain }}</p>
+
+                            </blockquote>
+
+                        </div>
+                    </div>
+                    {% endfor %}
+{##}
+{#                    <div class="media testimonial">#}
+{#                        <div class="media-left">#}
+{#                            <input type="radio" checked="checked" name="bestexp" value="2">#}
+{#                            <img src="{% static '/images/testimonial-3.png' %} " alt="">#}
+{#                        </div>#}
+{#                        <div class="media-body">#}
+{#                            <h3 class="media-heading">Thank You!</h3>#}
+{#                            <blockquote>#}
+{#                                <p>Aperiam consequatur quo quis exercitationem reprehenderit suscipit iste placeat.</p>#}
+{#                                <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>#}
+{#                            </blockquote>#}
+{#                        </div>#}
+{#                    </div>#}
+{##}
+{#                    <div class="media testimonial">#}
+{#                        <div class="media-left">#}
+{#                            <input type="radio" checked="checked" name="bestexp" value="3">#}
+{#                            <img src="{% static '/images/testimonial-2.png' %} " alt="">#}
+{#                        </div>#}
+{#                        <div class="media-body">#}
+{#                            <h3 class="media-heading">Thank You!</h3>#}
+{#                            <blockquote>#}
+{#                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure aperiam consequatur#}
+{#                                    quo.</p>#}
+{#                                <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>#}
+{#                            </blockquote>#}
+{#                        </div>#}
+{#                    </div>#}
+                    <input type="submit" value="Submit" class="btn btn-default" id="submitbtn" onclick="#">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section end -->
+
+    <!-- section start -->
+    <!-- ================ -->
+
+    <!-- section end -->
+
+    <!-- footer start -->
+    <!-- ================ -->
+    <footer id="footer">
+
+        <!-- .footer start -->
+        <!-- ================ -->
+        <div class="footer section">
+            <div class="container">
+                <h1 class="title text-center" id="edit">Write your own explaination</h1>
+                <div class="space"></div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <center><table width="100%">
+                            <tr>
+                                <th style="padding: 5px"><h4>Traveller</h4></th>
+                                <th style="padding: 5px"><h4>Point of interest</h4></th>
+                            </tr>
+                            <tr>
+                                <td><img src="{{ exp_userpic }}" width="180px"/></td>
+                                <td><img src="{{ exp_venuephoto }}" width="180px"/> </td>
+
+
+                            </tr>
+                            <tr>
+                                <td><h3>{{ exp_username }}</h3></td>
+                                <td><h3>{{ exp_venuename }}</h3></td>
+
+                            </tr>
+                            <tr>
+                                <td>{{ exp_usercity }} {{ exp_usercountry }}</td>
+                                <td>{{ exp_venueadd }}</td>
+                            </tr>
+                            <tr>
+                                 <td>
+                                 <p>~~places he/she had been to~~</p>
+                                     {% for venueid,venuename in exp_history.items %}
+                            {#                                {% for itemname in name %}#}
+                                    <a target="_blank" href="http://foursquare.com/v/{{ venueid }}">
+                                    <h6 style="padding-left: 10px;">{{ venuename }}</h6>
+                                    </a>
+                            {#                                {% endfor %}#}
+                            {#                                <h4>{{ venueid }}</h4>#}
+                                    {% endfor %}
+                                 </td>
+                                <td>
+                                    haode
+                                </td>
+                             </tr>
+
+                        </table></center>
+
+                        <div class="media-left">
+
+                            {#                            <h4><{{ exp_username }}</h4>#}
+                            {#                            <h5><{{ exp_usercity }}</h5>#}
+                            {#                            <p class="large">{{ exp_venuename }}</p>#}
+
+                        </div>
+                        {#                        <div class="footer-content">#}
+
+                        <!--<ul class="list-icons">
+                            <li><i class="fa fa-map-marker pr-10"></i> One infinity loop, 54100</li>
+                            <li><i class="fa fa-phone pr-10"></i> +00 1234567890</li>
+                            <li><i class="fa fa-fax pr-10"></i> +00 1234567891 </li>
+                            <li><i class="fa fa-envelope-o pr-10"></i> your@email.com</li>
+                        </ul>
+                        <ul class="social-links">
+                            <li class="facebook"><a target="_blank" href="https://www.facebook.com/pages/HtmlCoder/714570988650168"><i class="fa fa-facebook"></i></a></li>
+                            <li class="twitter"><a target="_blank" href="https://twitter.com/HtmlcoderMe"><i class="fa fa-twitter"></i></a></li>
+                            <li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
+                            <li class="skype"><a target="_blank" href="http://www.skype.com"><i class="fa fa-skype"></i></a></li>
+                            <li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+                            <li class="youtube"><a target="_blank" href="http://www.youtube.com"><i class="fa fa-youtube"></i></a></li>
+                            <li class="flickr"><a target="_blank" href="http://www.flickr.com"><i class="fa fa-flickr"></i></a></li>
+                            <li class="pinterest"><a target="_blank" href="http://www.pinterest.com"><i class="fa fa-pinterest"></i></a></li>
+                        </ul>-->
+                        {#                        </div>#}
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="footer-content">
+
+                            <form role="form" id="footer-form" method="post" action={% url 'write_exp' %} >
+                                {% csrf_token %}
+                                <div class="form-group has-feedback">
+                                    <label class="sr-only" for="message2">Message</label>
+                                    <textarea class="form-control" rows="8" id="message2" placeholder="Message"
+                                              name="message2" required></textarea>
+                                    <i class="fa fa-pencil form-control-feedback"></i>
+                                </div>
+                                <input type="submit" value="Send" class="btn btn-default">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .footer end -->
+
+        <!-- .subfooter start -->
+        <!-- ================ -->
+        <div class="subfooter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center">Copyright © 2014 Worthy by <a target="_blank" href="http://htmlcoder.me">HtmlCoder</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .subfooter end -->
+
+    </footer>
+{% endblock %}

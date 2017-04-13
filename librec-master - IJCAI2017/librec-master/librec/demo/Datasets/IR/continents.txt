@@ -1,0 +1,122 @@
+0|France|Europe
+1|United Kingdom|Europe
+2|Netherlands|Europe
+3|South Korea|Asia
+4|Sweden|Europe
+5|Italy|Europe
+6|Chile|America
+7|Serbia|Europe
+8|Ukraine|Europe
+9|Turkey|Europe
+10|Malta|Europe
+11|Guatemala|America
+12|Philippines|Asia
+13|Ireland|Europe
+14|Russia|Europe
+15|Brazil|America
+17|Mexico|America
+16|Belgium|Europe
+19|United Arab Emirates|Asia
+18|Portugal|Europe
+21|Australia|Oceania
+20|United States|America
+23|Czech Republic|Europe
+22|China|Asia
+25|South Africa|Africa
+24|Venezuela|America
+27|Luxembourg|Europe
+26|Malaysia|Asia
+29|Thailand|Asia
+28|Germany|Europe
+31|New Zealand|Oceania
+30|Hong Kong|Asia
+34|Indonesia|Asia
+35|Spain|Europe
+32|Belarus|Europe
+33|Denmark|Europe
+38|Peru|America
+39|Canada|America
+36|Argentina|America
+37|Kazakhstan|Asia
+42|Norway|Europe
+43|Israel|Asia
+40|Romania|Europe
+41|Latvia|Europe
+46|Bosnia and Herzegovina|Europe
+47|Kuwait|Asia
+44|Switzerland|Europe
+45|Uruguay|America
+51|Iran|Asia
+50|Slovakia|Europe
+49|Japan|Asia
+48|Croatia|Europe
+55|Saudi Arabia|Asia
+54|Austria|Europe
+53|Colombia|America
+52|India|Asia
+59|Georgia|Asia
+58|Qatar|Asia
+57|Caribbean Netherlands|America
+56|Poland|Europe
+63|Greece|Europe
+62|Hungary|Europe
+61|Taiwan|Asia
+60|Bahrain|Asia
+68|Sint Maarten|Europe
+69|Egypt|Africa
+70|Iceland|Europe
+71|Monaco|Europe
+64|Ecuador|America
+65|Lebanon|Asia
+66|Singapore|Asia
+67|Lithuania|Europe
+76|Nigeria|Africa
+77|Dominican Republic|America
+78|Paraguay|America
+79|Finland|Europe
+72|Libya|Africa
+73|Cyprus|Europe
+74|Cameroon|Africa
+75|Reunion|Africa
+85|Estonia|Europe
+84|Slovenia|Europe
+87|Gabon|Africa
+86|Republic of Indonesia|Asia
+81|Morocco|Africa
+80|Tunisia|Africa
+83|Algeria|Africa
+82|Bulgaria|Europe
+93|Panama|Africa
+92|Vietnam|Asia
+95|Côte d'Ivoire|Africa
+94|Angola|Africa
+89|Ghana|Africa
+88|Sri Lanka|Asia
+91|Honduras|America
+90|Vatican City|Europe
+101|Iraq|Asia
+102|Mongolia|Asia
+99|Costa Rica|America
+100|U.S. Virgin Islands|America
+97|Cambodia|Asia
+98|Oman|Asia
+96|Guadeloupe|America
+109|Kyrgyzstan|Asia
+110|Albania|Europe
+107|Azerbaijan|Asia
+108|Nepal|Asia
+105|Bangladesh|Asia
+106|Puerto Rico|America
+103|Curaçao|America
+104|Cayman Islands|America
+111|Republic of the Union of Myanmar|Asia
+112|Trinidad and Tobago|America
+113|Montenegro|Europe
+114|Rwanda|Africa
+115|French Guiana|America
+116|Senegal|Africa
+117|Haiti|Africa
+118|Turkmenistan|Asia
+119|Macedonia|Europe
+120|Timor-Leste|Asia
+121|Bolivia|America

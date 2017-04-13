@@ -1,0 +1,6 @@
+index html: add line 308-322 to poi/templates/poi/index.html
+views.py: add def search()...(line 56-67) also line 5-10  to /poi/views.py 
+ajax.js: add the whole file to poi/static/js
+urls.py: add line 9 in poi/urls.py
+
+need to run indexing.py first on your computer to see elasticsearch

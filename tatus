@@ -1,0 +1,423 @@
+[33mcommit ecec48155ec23b424dba6d317c1f092548e1cda3[m
+Author: Johan <johan@jonasson.mobi>
+Date:   Sun Apr 9 17:29:07 2017 +0200
+
+    r
+
+[33mcommit 985d434a4b43aa9198842efb929b79e9a8053799[m
+Author: Johan <johan@jonasson.mobi>
+Date:   Sun Apr 9 17:28:03 2017 +0200
+
+    f
+
+[33mcommit 4acf271663192bb4ca835d2fd9ff306b9ec3759a[m
+Author: Johan <johan@jonasson.mobi>
+Date:   Sun Apr 9 17:24:00 2017 +0200
+
+    Fix hidden space
+
+[33mcommit 9a907a31f577c869c23911432be86ab36b57aa76[m
+Author: Johan <johan@jonasson.mobi>
+Date:   Sun Apr 9 17:22:10 2017 +0200
+
+    Cathc all the keywords
+
+[33mcommit d7bb6c84c171e631064dfb4937ba612e0c032551[m
+Author: Johan <johan@jonasson.mobi>
+Date:   Sun Apr 9 17:14:11 2017 +0200
+
+    Ops
+
+[33mcommit 1985b83b1415d5562d611628ced3162aa82756a1[m
+Author: Johan <johan@jonasson.mobi>
+Date:   Sun Apr 9 17:13:19 2017 +0200
+
+    Added missing '
+
+[33mcommit bf941d0b5fefa10089e9b06191e4c36d14a4541c[m
+Author: Johan <johan@jonasson.mobi>
+Date:   Sun Apr 9 17:11:28 2017 +0200
+
+    Sorry
+
+[33mcommit 1832ab471c9c8648d1a04eeadb5b6f9385ca54d0[m
+Author: Johan <johan@jonasson.mobi>
+Date:   Sun Apr 9 17:08:27 2017 +0200
+
+    Remove frequence ordering for user topics
+
+[33mcommit c34d8e0177b30b2dbc2ec2bffef1ccb45be77934[m
+Author: Johan <johan@jonasson.mobi>
+Date:   Sun Apr 9 17:05:19 2017 +0200
+
+    Change user topics database table in crowdflower publish code
+
+[33mcommit 98269b163c7b6b161e7a8d92f41f9db24f80532f[m
+Author: Johan <johan@jonasson.mobi>
+Date:   Sun Apr 9 16:57:19 2017 +0200
+
+    Change location where comments are missing.
+
+[33mcommit 6785105c1743f3b817db251049ad416febfca861[m
+Author: Johan <johan@jonasson.mobi>
+Date:   Sun Apr 9 16:39:27 2017 +0200
+
+    Added friend6 to friend summary
+
+[33mcommit 77aa2d85051da49eab4902e79615d1e86429fb14[m
+Author: Johan <johan@jonasson.mobi>
+Date:   Sun Apr 9 16:35:18 2017 +0200
+
+    Cleaning
+
+[33mcommit eb1ef390755c278244be2c48d12403239d118f53[m
+Author: Johan <johan@jonasson.mobi>
+Date:   Sun Apr 9 16:13:16 2017 +0200
+
+    Display of example reviews
+
+[33mcommit 07dd12e9b8f48f61e9c7f6025ad8feb88f9a7e27[m
+Author: Johan <johan@jonasson.mobi>
+Date:   Sun Apr 9 16:08:26 2017 +0200
+
+    Fix error
+
+[33mcommit a07594104027521744663ca46a89fb8f634f7772[m
+Author: Johan <johan@jonasson.mobi>
+Date:   Sun Apr 9 14:56:14 2017 +0200
+
+    Created code to launch Typical users in one job
+
+[33mcommit f77c90bd702e06eadd29c8d807e76920fcc6168b[m
+Author: Johan <johan@jonasson.mobi>
+Date:   Sun Apr 9 14:37:27 2017 +0200
+
+    Remove extra print
+
+[33mcommit 63f1aea76fe58c902bf2f136df304daa74627eab[m
+Author: Johan <johan@jonasson.mobi>
+Date:   Sun Apr 9 14:36:04 2017 +0200
+
+    Moved function to top of file
+
+[33mcommit 2ce93b733d489bbec05cebdcaa0f5b825a1c5a32[m
+Author: Johan <johan@jonasson.mobi>
+Date:   Sun Apr 9 14:30:49 2017 +0200
+
+    Fixed img links and cleaning
+
+[33mcommit 31ac8b3a8effc430866ac3f6f9aa54aad8a939d0[m
+Author: Kevinkeya <Kevinkeya@users.noreply.github.com>
+Date:   Sat Apr 8 23:21:39 2017 +0200
+
+    LDA graph
+
+[33mcommit 0b6388a33b147189f3aac2d4b27ef61c8c0beeb3[m
+Author: Johan <johan@jonasson.mobi>
+Date:   Sat Apr 8 21:42:39 2017 +0200
+
+    Launch Friends to crowdflower
+
+[33mcommit e7ee057f3360f7e54b008847a0032ef1797eb458[m
+Merge: f7d5ae6 08a6ef2
+Author: Johan <johan@jonasson.mobi>
+Date:   Sat Apr 8 21:27:26 2017 +0200
+
+    Merge branch 'master' of https://github.com/Kevinkeya/InformationRetrieval
+
+[33mcommit f7d5ae6981a1929d944d2bebf2cf691ed5051836[m
+Author: Johan <johan@jonasson.mobi>
+Date:   Sat Apr 8 21:27:19 2017 +0200
+
+    Fix
+
+[33mcommit 08a6ef2862cdb7ab48dafcb8420afc564fd8391e[m
+Author: Lei <king-trump@hotmail.com>
+Date:   Sat Apr 8 21:00:23 2017 +0200
+
+    Fixed to python 3 and cleaning
+
+[33mcommit 6a87eabb523d309494ffb39e294dc7256a73109c[m
+Author: Johan <johan@jonasson.mobi>
+Date:   Sat Apr 8 20:59:02 2017 +0200
+
+    Fixed extra space is firends recommendations
+
+[33mcommit 8dd3cf157192b893e0b6adc2736453b440939b4e[m
+Author: Johan <johan@jonasson.mobi>
+Date:   Sat Apr 8 20:46:23 2017 +0200
+
+    Readrec ready to insert freinds into database, Added new Recommendations with friends in the data
+
+[33mcommit 779306b38ee1fa67960dfcdb0d5226998754aaa9[m
+Author: Johan <johan@jonasson.mobi>
+Date:   Sat Apr 8 19:04:53 2017 +0200
+
+    Comments
+
+[33mcommit a2b643f5b1c5c45ef4f93e23fde2d80ec5d9afd9[m
+Author: Johan <johan@jonasson.mobi>
+Date:   Sat Apr 8 17:01:20 2017 +0200
+
+    Add comment to data
+
+[33mcommit e349fd60916a042e896dd102902bd1eb258540c1[m
+Author: Johan <johan@jonasson.mobi>
+Date:   Sat Apr 8 16:59:58 2017 +0200
+
+    Added comments
+
+[33mcommit d4aa533ce290a30a657213c3e98962434fd317a2[m
+Author: Lei <king-trump@hotmail.com>
+Date:   Sat Apr 8 16:29:50 2017 +0200
+
+    Fixed syntax
+
+[33mcommit fc1be9094cfdcbd8426eb5f32d9f3699dcc23132[m
+Merge: 3611e64 ca93429
+Author: Johan <johan@jonasson.mobi>
+Date:   Sat Apr 8 15:57:21 2017 +0200
+
+    Merge branch 'master' of https://github.com/Kevinkeya/InformationRetrieval
+
+[33mcommit 3611e64a6c2c010f241eabbe57126e763cb11712[m
+Author: Johan <johan@jonasson.mobi>
+Date:   Sat Apr 8 15:44:34 2017 +0200
+
+    Add typical user to crowdflower
+
+[33mcommit ca93429dd1103efd26db85543bde770e35ab0760[m
+Author: safiya <placepalace7@gmail.com>
+Date:   Fri Apr 7 21:19:34 2017 +0200
+
+    update css
+
+[33mcommit 82b0dc77fcc50229013d008cec540c53ee0ed342[m
+Author: safiya <placepalace7@gmail.com>
+Date:   Fri Apr 7 17:31:28 2017 +0200
+
+    haoba
+
+[33mcommit 90b1226988028c51ce0c21d9711da358fb5fe8b6[m
+Author: Kevinkyea <kevinkeya.lan@gmail.com>
+Date:   Fri Apr 7 12:12:37 2017 +0200
+
+    Super fast
+
+[33mcommit 00616fb1f2399611c9193a86d01ca0c9d39de474[m
+Author: Kevinkyea <kevinkeya.lan@gmail.com>
+Date:   Thu Apr 6 22:30:22 2017 +0200
+
+    Should be faster now
+
+[33mcommit 6f58c4c7647dea9e2391f23b5b2c332b24d69f48[m
+Merge: 61d604f 92d50d9
+Author: safiya <placepalace7@gmail.com>
+Date:   Thu Apr 6 15:35:31 2017 +0200
+
+    Merge branch 'master' of github.com:Kevinkeya/InformationRetrieval
+
+[33mcommit 61d604f3fc1e4a069e02ff63bb51b721cca447e7[m
+Author: safiya <placepalace7@gmail.com>
+Date:   Thu Apr 6 15:34:57 2017 +0200
+
+    111
+
+[33mcommit 92d50d9deb74ccf49736afb445de8a467dad673e[m
+Author: Lei WANG <king-trump@hotmail.com>
+Date:   Thu Apr 6 14:45:39 2017 +0200
+
+    Add files via upload
+
+[33mcommit 313852b441c752c680891eeb5772be99eb4c1081[m
+Author: sarishinohara <sgmsuchan@gmail.com>
+Date:   Thu Apr 6 14:43:55 2017 +0200
+
+    add elasticsearch in UI
+
+[33mcommit ccebd041ecf027c1552e3511cd64c1a101c03caf[m
+Merge: 9bb07da c41ca29
+Author: Johan <johan@jonasson.mobi>
+Date:   Thu Apr 6 12:08:47 2017 +0200
+
+    Merge branch 'master' of https://github.com/Kevinkeya/InformationRetrieval
+
+[33mcommit 9bb07daa2cd6db93071ce2adba24806c68e55912[m
+Author: Johan <johan@jonasson.mobi>
+Date:   Thu Apr 6 12:08:38 2017 +0200
+
+    Now using BPR instead
+
+[33mcommit c41ca29e1e75158c577cc75498ae28cee5ff8ae3[m
+Author: Kevinkyea <kevinkeya.lan@gmail.com>
+Date:   Wed Apr 5 23:56:14 2017 +0200
+
+    Refractory codes
+
+[33mcommit 4507a210204a43260d8e1b2a8dd9a2dec5dc53d1[m
+Author: safiya <placepalace7@gmail.com>
+Date:   Wed Apr 5 19:02:27 2017 +0200
+
+    update the random=)
+
+[33mcommit 128726a591426ac2ccef6b6d18215adcd59c57f4[m
+Author: Kevinkyea <kevinkeya.lan@gmail.com>
+Date:   Tue Apr 4 21:50:38 2017 +0200
+
+    Now we have more user profile and venue comments
+
+[33mcommit dd63ee41232beb3b5b8f123902523015a5f83bb4[m
+Author: safiya <placepalace7@gmail.com>
+Date:   Tue Apr 4 18:44:46 2017 +0200
+
+    update webinterface for showing recommendation and user profile
+
+[33mcommit 58d6367ca6a87c1c46a88bb8404fa00515372672[m
+Author: safiya <placepalace7@gmail.com>
+Date:   Fri Mar 31 21:50:44 2017 +0200
+
+    Done profile pictures and userId
+
+[33mcommit 01c332442dac099dd8f416d39b5a311c0b36eb99[m
+Author: safiya <placepalace7@gmail.com>
+Date:   Fri Mar 31 15:42:00 2017 +0200
+
+    Link to database
+
+[33mcommit 98bb362bc9104ab7fafd355e1734620d648db492[m
+Author: Lei <king-trump@hotmail.com>
+Date:   Fri Mar 31 11:56:37 2017 +0200
+
+    fixed table name
+
+[33mcommit 553e11536c248d3de449f46a313b9051be250a59[m
+Author: Johan <johan@jonasson.mobi>
+Date:   Fri Mar 31 11:50:52 2017 +0200
+
+    Py3 fix
+
+[33mcommit 50aa5d1676c278a9b70e1815fca8d2178e9f36d0[m
+Author: Johan <johan@jonasson.mobi>
+Date:   Fri Mar 31 11:36:41 2017 +0200
+
+    Add recommendations to database code
+
+[33mcommit 3f4b6db921cff28c320a67823e6760de4c97770a[m
+Author: Lei WANG <king-trump@hotmail.com>
+Date:   Fri Mar 31 10:53:55 2017 +0200
+
+    Add files via upload
+
+[33mcommit 43e50ace3f88de40b3f12101a273748dd5dede18[m
+Author: Johan <johan@jonasson.mobi>
+Date:   Fri Mar 31 10:35:33 2017 +0200
+
+    Recommendations and crowdflower
+
+[33mcommit 8ebfb9d1708e92c73f84e82ece73d7bc51b514fb[m
+Author: safiya <placepalace7@gmail.com>
+Date:   Wed Mar 29 21:31:22 2017 +0200
+
+    Include web interface
+
+[33mcommit 479344e6bc62854b7aada881f60992ad733a9b2b[m
+Author: Lei WANG <king-trump@hotmail.com>
+Date:   Mon Mar 27 21:05:21 2017 +0200
+
+    Add files via upload
+
+[33mcommit 3ccc2df32a054a1942bf57902645a93c69d56e4c[m
+Author: sarishinohara <sgmsuchan@gmail.com>
+Date:   Mon Mar 20 10:20:36 2017 +0100
+
+    modify get twitter user code
+
+[33mcommit 35a43cb8ae5fd3fffaad6d549c1e301446fa0c06[m
+Author: sarishinohara <sgmsuchan@gmail.com>
+Date:   Mon Mar 20 10:19:38 2017 +0100
+
+    dataset link
+
+[33mcommit 3a3514d7510aaa681a2f9f6c9037e4f2f6d68171[m
+Author: sarishinohara <sgmsuchan@gmail.com>
+Date:   Sun Mar 19 22:25:49 2017 +0100
+
+    rewrite code
+
+[33mcommit 3c8edc26ab27469355ea6abdc85a8b3c1227184d[m
+Author: Johan <johan@jonasson.mobi>
+Date:   Sun Mar 19 17:07:12 2017 +0100
+
+    ++ to += 1
+
+[33mcommit 5889c84344d53907d40f461700101af35ce5a6c3[m
+Author: Johan <johan@jonasson.mobi>
+Date:   Sun Mar 19 17:04:49 2017 +0100
+
+    Fixed sendToEvaluate
+
+[33mcommit 0e5de611acf2d5c0fed02102485a303e4c1604c9[m
+Author: Johan <johan@jonasson.mobi>
+Date:   Sun Mar 19 16:57:11 2017 +0100
+
+    Fixed syntax
+
+[33mcommit 3dcb0b6b03c16c24e5ebcff9e4f7b310582108f6[m
+Author: Johan <johan@jonasson.mobi>
+Date:   Sun Mar 19 16:17:15 2017 +0100
+
+    Crowdflower API add and get result from generate and evaluate jobs
+
+[33mcommit 3638339bd4c02a0852d2301faf77a8b5f2ed15d6[m
+Author: sarishinohara <sgmsuchan@gmail.com>
+Date:   Wed Mar 15 16:51:33 2017 +0100
+
+    fix id & rewite json in missing list
+
+[33mcommit dd64d1a80559b30d7b7d2d7bbd86da0155deccb2[m
+Author: sarishinohara <sgmsuchan@gmail.com>
+Date:   Wed Mar 15 13:47:07 2017 +0100
+
+    test valid json
+
+[33mcommit da17cdd281c47bbb04bcc298454974d1b42e13c7[m
+Author: sarishinohara <sgmsuchan@gmail.com>
+Date:   Wed Mar 15 13:43:15 2017 +0100
+
+    retrieve json from 4s and twitter
+
+[33mcommit a9fb6b7eab7ce3b2bd663b0216b88618d2014687[m
+Author: Kevinkyea <kevinkeya.lan@gmail.com>
+Date:   Mon Mar 6 16:14:29 2017 +0100
+
+    Including the algorithm codes
+
+[33mcommit c567423a9f2bd2b749e2e535b9defe1cfd381890[m
+Author: Kevinkeya <Kevinkeya@users.noreply.github.com>
+Date:   Mon Mar 6 16:06:40 2017 +0100
+
+    Update Idea document link
+
+[33mcommit 9f92a0112067dc3ab48298f21ec78b1d72f2ed76[m
+Author: Kevinkyea <kevinkeya.lan@gmail.com>
+Date:   Sun Mar 5 00:43:49 2017 +0100
+
+    More Venue
+
+[33mcommit 8dc296f2b9901306e927710ffbc486b2ab8b2a21[m
+Author: Kevinkyea <kevinkeya.lan@gmail.com>
+Date:   Sat Mar 4 21:49:44 2017 +0100
+
+    Basic foursquare API
+
+[33mcommit 8c6454e2d341674c83bac636bee336191b7ed07a[m
+Author: Kevinkeya <Kevinkeya@users.noreply.github.com>
+Date:   Mon Feb 27 15:54:00 2017 +0100
+
+    Update README.md
+
+[33mcommit afccf2ad04a18710172c2e8b1e715d608340736c[m
+Author: Kevinkeya <Kevinkeya@users.noreply.github.com>
+Date:   Tue Feb 14 16:51:17 2017 +0100
+
+    Initial commit

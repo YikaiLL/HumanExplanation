@@ -1,0 +1,4 @@
+Dataset: ...sets-Recsys2016\twitter\\london.txt
+With Setup: cv -k 5 --test-view all --early-stop RMSE
+TMF,0.183595,0.231046,0.552005,0.141661,0.274791,0.391366,,10, 1.0E-4, -1.0, 0.05, 0.05, 0.05, 200, false,'19:46','00:00'
+

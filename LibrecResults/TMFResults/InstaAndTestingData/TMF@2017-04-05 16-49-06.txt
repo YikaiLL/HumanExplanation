@@ -1,0 +1,5 @@
+Dataset: ...2016\twitter\londonInstaTwitter.txt
+With Setup: test-set -f D:\workspace\InformationRetrieval\librec-master-Recsys2016\librec-master-Recsys2016\datasets-Recsys2016\twitter\london.txt
+Dataset: ...asets-Recsys2016\twitter\london.txt
+TMF,0.000000,0.000000,0.000000,0.000000,0.500000,0.000000,0.000000,0.000000,,10, 1.0E-4, -1.0, 0.05, 0.05, 0.05, 200, false,'12:28','00:46'
+

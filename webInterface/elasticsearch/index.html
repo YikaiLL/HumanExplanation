@@ -1,0 +1,357 @@
+{% extends "poi/base.html" %}
+{% block content %}
+    {% load staticfiles %}
+    <div class="scrollToTop">
+        <i class="icon-up-open-big"></i>
+    </div>
+
+    <!-- header start -->
+    <!-- ================ -->
+    <header class="header fixed clearfix navbar navbar-fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+
+                    <!-- header-left start -->
+                    <!-- ================ -->
+                    <div class="header-left clearfix">
+
+                        <!-- logo -->
+                        <div class="logo smooth-scroll">
+                            <a href="#banner"><img id="logo" src="{% static '/images/logo.png' %}" alt="Worthy"></a>
+                        </div>
+
+                        <!-- name-and-slogan -->
+                        <div class="site-name-and-slogan smooth-scroll">
+                            <div class="site-name"><a href="#banner">Title</a></div>
+                            <div class="site-slogan">new crowdsourcing platform</div>
+                        </div>
+
+                    </div>
+                    <!-- header-left end -->
+
+                </div>
+                <div class="col-md-8">
+
+                    <!-- header-right start -->
+                    <!-- ================ -->
+                    <div class="header-right clearfix">
+
+                        <!-- main-navigation start -->
+                        <!-- ================ -->
+                        <div class="main-navigation animated">
+
+                            <!-- navbar start -->
+                            <!-- ================ -->
+                            <nav class="navbar navbar-default" role="navigation">
+                                <div class="container-fluid">
+
+                                    <!-- Toggle get grouped for better mobile display -->
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                                data-target="#navbar-collapse-1">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
+
+                                    <!-- Collect the nav links, forms, and other content for toggling -->
+                                    <div class="collapse navbar-collapse scrollspy smooth-scroll"
+                                         id="navbar-collapse-1">
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li class="active"><a href="#Recommendation">Recommendation</a></li>
+                                            <li><a href="#edit">Edit Explaination</a></li>
+                                            <li><a href="#choose">Choose the Best</a></li>
+                                            <!--<li><a href="#portfolio">Portfolio</a></li>
+                                            <li><a href="#clients">Clients</a></li>
+                                            <li><a href="#contact">Contact</a></li>-->
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </nav>
+                            <!-- navbar end -->
+
+                        </div>
+                        <!-- main-navigation end -->
+
+                    </div>
+                    <!-- header-right end -->
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- banner start -->
+    <!-- ================ -->
+    <div id="banner" class="banner">
+        <div class="banner-image"></div>
+        <div class="banner-caption">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 object-non-visible" data-animation-effect="fadeIn">
+                        <h1 class="text-center">We are <span>Title</span></h1>
+                        <p class="lead text-center">Help you to find a better choice</p>
+                        <p class="lead text-center">Discover What <strong>{{ names }}</strong> would have interest</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner end -->
+
+
+    <!-- section start -->
+    <!-- ================ -->
+    <div class="section translucent-bg bg-image-1 blue">
+        <div class="container object-non-visible" data-animation-effect="fadeIn">
+            <h1 id="Recommendation" class="text-center title">Recommendation</h1>
+            <div class="space"></div>
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="media">
+                        <div class="media-left">
+                            <img src="{{ pic }}"/>
+                        </div>
+                        <div class="media-body">
+                            <a href="home.html"><h4 class="media-heading" title="go back to home">{{ names }}</h4></a>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <p>Let me see... Wow, you have been to a lot of places in London.</p>
+                        {% for venueid,venuename in uservenuelist.items %}
+                            {#                                {% for itemname in name %}#}
+                            <a target="_blank" href="http://foursquare.com/v/{{ venueid }}"><h4
+                                    class="media-heading">{{ venuename }}</h4></a>
+                            {#                                {% endfor %}#}
+                            {#                                <h4>{{ venueid }}</h4>#}
+                        {% endfor %}
+                    </div>
+
+                </div>
+
+                <div class="space visible-xs"></div>
+                <div class="col-sm-7">
+                    <input class="form-search" id="keyword" name="keyword"/>
+                    <i class="fa fa-search-plus" onclick="#"></i>
+                    <div class="media">
+                        <div class="media-body">
+                            <h4 class="media-heading">According to your personal habbit, I would recommend these
+                                location for you...</h4>
+                        </div>
+                    </div>
+
+
+                    <ul>
+                        <div id="recomlist">
+
+                            <li class="media-body">
+
+                                {#								<div class="media-body">#}
+                                {% for venueid,venueprofile in POIs.items %}
+                                    <div class="col-sm-7">
+                                        <a target="_blank" href="http://foursquare.com/v/{{ venueid }}"><img
+                                                src="{{ venueprofile.picture }}"/></a>
+                                    </div>
+
+                                    {#									        <h4 class="media-heading">{{  venueid  }}</h4>#}
+                                    {#                                        {% for venuekey,value in venueprofile.iteritems %}#}
+                                    <div class="col-sm-5">
+                                        <h2 class="media-heading">{{ venueprofile.name }}</h2>
+                                        <h4 class="media-heading">{{ venueprofile.address }}</h4>
+                                        {% for type in venueprofile.type %}
+                                            <a href="#"></a><p class="media-heading">{{ type }}</p></a>
+                                        {% endfor %}
+                                    </div>
+                                    <div class="space visible-xs"></div>
+                                {% endfor %}
+
+
+                                {#									<p><a href = "#">link</a>	<a href = "#">link</a></p>#}
+                                {#									<p>Explaination</p>#}
+                                {#								</div>#}
+                            </li>
+                        </div>
+
+                        <!--	<li id="rank2">
+                                <div class="media-left">
+                                    <i class="fa fa-area-chart"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading" id = "rank2">Restuarant</h4>
+                                    <p>Explaination</p>
+                                </div>
+                            </li>
+
+                            <li id="rank3">
+                                <div class="media-left">
+                                    <i class="fa fa-child"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading" id = "rank3">Cafe</h4>
+                                    <p>Explaination</p>
+                                </div>
+                            </li>
+
+                            <li id="rank1">
+                                <div class="media-left">
+                                    <i class="fa fa-codepen"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading" id="rank4">Museum</h4>
+                                    <p>Explaination</p>
+                                </div>
+                            </li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section end -->
+
+
+
+    <!-- section start -->
+    <!-- ================ -->
+    <div class="section translucent-bg bg-image-2 pb-clear">
+        <div class="container object-non-visible" data-animation-effect="fadeIn">
+            <h1 id="choose" class="title text-center">Which Explaination is a better choice?</h1>
+            <div class="space"></div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="media testimonial">
+                        <div class="media-left">
+                            <img src="{% static '/images/testimonial-1.png' %}" alt="">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">You are Amazing!</h3>
+                            <blockquote>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure aperiam consequatur
+                                    quo.</p>
+                                <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+
+                    <div class="media testimonial">
+                        <div class="media-left">
+                            <input type="radio" checked="checked" name="bestexp" value="1">
+                            <img src="{% static '/images/testimonial-2.png' %}" alt="">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Yeah!</h3>
+                            <blockquote>
+                                <p>Iure aperiam consequatur quo quis exercitationem reprehenderit dolor vel ducimus.</p>
+                                <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <div class="media testimonial">
+                        <div class="media-left">
+                            <input type="radio" checked="checked" name="bestexp" value="2">
+                            <img src="{% static '/images/testimonial-3.png' %} " alt="">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Thank You!</h3>
+                            <blockquote>
+                                <p>Aperiam consequatur quo quis exercitationem reprehenderit suscipit iste placeat.</p>
+                                <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <div class="media testimonial">
+                        <div class="media-left">
+                            <input type="radio" checked="checked" name="bestexp" value="3">
+                            <img src="{% static '/images/testimonial-2.png' %} " alt="">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Thank You!</h3>
+                            <blockquote>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure aperiam consequatur
+                                    quo.</p>
+                                <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <input type="submit" value="Submit" class="btn btn-default" id="submitbtn" onclick="#">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section end -->
+
+    <!-- section start -->
+    <!-- ================ -->
+
+    <!-- section end -->
+
+    <!-- footer start -->
+    <!-- ================ -->
+    <footer id="footer">
+
+        <!-- .footer start -->
+        <!-- ================ -->
+        <div class="footer section">
+            <div class="container">
+                <h1 class="title text-center" id="edit">Write your own explaination</h1>
+                <div class="space"></div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="media-left">
+                            <p class="large">Search venues for user</p>
+
+
+                                <input id="search_box" type="text" placeholder="Search...">
+                                <button id="search_submit" type="submit" class="btn-default">Search</button>
+                                {% csrf_token %}
+
+
+                        </div>
+
+
+                        <div class="footer-content" id="search_result">
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="footer-content">
+                            <form role="form" id="footer-form">
+                                <div class="form-group has-feedback">
+                                    <label class="sr-only" for="message2">Message</label>
+                                    <textarea class="form-control" rows="8" id="message2" placeholder="Message"
+                                              name="message2" required></textarea>
+                                    <i class="fa fa-pencil form-control-feedback"></i>
+                                </div>
+                                <input type="submit" value="Send" class="btn btn-default" onclick="">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .footer end -->
+
+        <!-- .subfooter start -->
+        <!-- ================ -->
+        <div class="subfooter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center">Copyright © 2014 Worthy by <a target="_blank" href="http://htmlcoder.me">HtmlCoder</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .subfooter end -->
+
+    </footer>
+{% endblock %}

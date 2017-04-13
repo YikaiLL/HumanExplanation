@@ -1,0 +1,4 @@
+Dataset: .\demo\Datasets\IR\london.txt
+With Setup: cv -k 5 -p on --rand-seed 1 --test-view all
+BPR,0.004146,0.012932,0.003795,0.023388,0.003313,0.041801,0.708419,0.011755,,0.0,10,0.01,-1.0,0.1,0.1,30,'00:47','00:22'
+
