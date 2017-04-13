@@ -1,6 +1,4 @@
-# InformationRetrieval
--------
-
+# Project 6: Recommendation with Human Explanation
 
 ## Collaborators
 
@@ -9,7 +7,23 @@
 , [safiyashen](https://github.com/safiyashen)
 , [LayNeverGiveUp](https://github.com/LayNeverGiveUp).
 
-## Project 6: Recommendation with Human Explanation
+## Web Interface
+### User Profile and POI List
+ ![Image of User Profile](https://raw.githubusercontent.com/Kevinkeya/NaturalLanguageExplanation/master/UserProfilePOI.jpeg)
+ 
+###  Write Explanation
+![Image of Elastic Search](https://raw.githubusercontent.com/Kevinkeya/NaturalLanguageExplanation/master/WriteExplanation.jpeg)
+ 
+###  Select Explanation
+![Image of Elastic Search](https://raw.githubusercontent.com/Kevinkeya/NaturalLanguageExplanation/master/SelectExplanation.jpeg)
+
+
+### Elastic Search
+![Image of Elastic Search](https://raw.githubusercontent.com/Kevinkeya/NaturalLanguageExplanation/master/ElasticSearch.jpeg)
+
+
+
+## Project Description
 Owner: Web Information Systems (Jie Yang)
  
 Unlike traditional software systems, recommender systems are automated by machine learning programs. These programs are created mainly to train recommendation models that can learn statistical patterns – what is relevant to whom – from historical data, and later on to generate relevant recommendations to users. A largely neglected issue is the lack of model and algorithmic transparency, which can lead to a vital concern of trust. On the one hand, users may not trust the recommendations if they do not understand the reasons behind the recommendations. On the other hand, the difficulty in assessing trust makes it risky when developers choose to deploy a new recommendation model. Human can be the key to address the transparency issue in recommender systems: while machines are computational efficient and scalable, humans excel at generating ideas and verbalizing explanation.
